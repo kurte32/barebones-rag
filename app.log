@@ -1,0 +1,10 @@
+2025-01-20 12:10:35,230 - ERROR - Error in get_relevant_context: mat1 and mat2 shapes cannot be multiplied (61x3072 and 1024x1)
+2025-01-20 12:16:44,077 - ERROR - Error in get_relevant_context: mat1 and mat2 shapes cannot be multiplied (61x3072 and 1024x1)
+2025-01-20 12:52:46,517 - ERROR - Failed to load embeddings with hash: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL numpy._core.multiarray._reconstruct was not an allowed global by default. Please use `torch.serialization.add_safe_globals([_reconstruct])` to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+2025-01-20 14:03:37,090 - ERROR - No embedding returned for the input.
+2025-01-20 14:03:53,466 - ERROR - No embedding returned for the input.
