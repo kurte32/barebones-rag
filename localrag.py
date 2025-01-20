@@ -150,6 +150,8 @@ def get_relevant_context(rewritten_input, vault_embeddings, vault_content, embed
         # Debugging: Print similarity scores and top indices
         console.print(f"[blue]Similarity Scores: {topk_scores.tolist()}[/blue]\n")
         console.print(f"[blue]Top Indices: {topk_filtered_indices}[/blue]\n")
+        console.print(f"[blue]Top Contexts: {len(topk_filtered_indices)}[/blue]\n")
+        
 
         if not topk_filtered_indices:
             console.print("[yellow]No context meets the established similarity threshold. Consider lowering the threshold to obtain more results.[/yellow]\n")
@@ -250,7 +252,7 @@ def ollama_chat(user_input, system_message, vault_embeddings, vault_content, llm
         vault_content,
         embedding_model=embedding_model,  # Use separate embedding model
         device='cpu',  # Adjust based on your setup
-        top_k=3,
+        top_k=7,
         similarity_threshold=0.6  # Adjusted threshold
     )
     if relevant_context:
