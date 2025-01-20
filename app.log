@@ -8,3 +8,4 @@
 Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
 2025-01-20 14:03:37,090 - ERROR - No embedding returned for the input.
 2025-01-20 14:03:53,466 - ERROR - No embedding returned for the input.
+2025-01-20 14:33:20,410 - ERROR - Error al generar la respuesta con el LLM: 'ascii' codec can't encode character '\xed' in position 21: ordinal not in range(128)
